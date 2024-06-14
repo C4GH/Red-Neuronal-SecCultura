@@ -1,25 +1,38 @@
+# Importación de bibliotecas necesarias para manejo de redes neuronales con PyTorch y manejo de excepciones
 import torch
 import torch.nn as nn
 import torch.optim as optim
 import traceback
 
-log_file = 'training_log.txt'
-
+# Ruta del archivo log donde se guardará la información de entrenamiento y prueba
+log_file = 'training_test_log.txt'
 
 def log_message(message):
+    """
+    Guarda y muestra un mensaje tanto en el archivo de log como en la consola.
+    Args:
+    - message (str): Mensaje para loggear.
+    """
     with open(log_file, 'a') as f:
         f.write(f"{message}\n")
     print(message)
 
-
 def train(model, dataloader, epochs, device='cpu'):
+    """
+    Entrena un modelo utilizando un cargador de datos.
+    Args:
+    - model (torch.nn.Module): Modelo de red neuronal para entrenar.
+    - dataloader (DataLoader): DataLoader de PyTorch que proporciona datos y etiquetas en batches.
+    - epochs (int): Número total de épocas para entrenar el modelo.
+    - device (str, opcional): Dispositivo ('cpu' o 'cuda') para realizar el entrenamiento.
+    """
     model.to(device)
     model.train()
     optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
     criterion = nn.CrossEntropyLoss()
-
     best_loss = float('inf')
+
     for epoch in range(epochs):
         try:
             for i, (data, target) in enumerate(dataloader):
@@ -61,8 +74,14 @@ def train(model, dataloader, epochs, device='cpu'):
             log_message(f"Exception in epoch {epoch}: {str(e)}")
             log_message(traceback.format_exc())
 
-
 def test(model, dataloader, device='cpu'):
+    """
+    Evalúa un modelo utilizando un cargador de datos.
+    Args:
+    - model (torch.nn.Module): Modelo de red neuronal para evaluar.
+    - dataloader (DataLoader): DataLoader de PyTorch que proporciona datos y etiquetas en batches.
+    - device (str, opcional): Dispositivo ('cpu' o 'cuda') para realizar la evaluación.
+    """
     model.to(device)
     model.eval()
     criterion = nn.CrossEntropyLoss()
