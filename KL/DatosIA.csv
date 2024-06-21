@@ -1,0 +1,41 @@
+﻿pregunta, cadena,"		prob1","		prob2","	prob3"
+1,"		estado mexico museos",0.8885,0.0987,0.0128
+2,"		pueblos indígenas",0.1134,0.8153,0.0714
+10,"		generalisimo morelos",0.921,0.0526,0.0264
+11,"		arte moderno museo",0.0128,0.8306,0.1566
+13,"		marítimo guadalajara museo naval",0.0359,0.9438,0.0203
+19,"		museos méxico estado",0.1081,0.0147,0.8772
+39,"		gutierrez jaime sabines tuxtla",0.0605,0.3132,0.6263
+49,"		luis potosí san",0.9134,0.0464,0.0402
+56,"		feria libro nacional",0.1022,0.0182,0.8796
+76,"		licenciatura clásica danza",0.011,0.0121,0.9769
+122,"		coahuila ferrocarril museo torreón",0.9998,0.0002,0
+130,"		angeles monasterio nuestra señora",0.7525,0.014,0.2335
+134,"		doce pares de francia",0.0001,0.8654,0.1345
+137,"		san miguel de allende",0.3711,0.6239,0.005
+153,"		museo de las momias de guanajuato",0,0,1
+172,"		orquesta de baja c",0.9806,0.0001,0.0193
+183,"		curso historia museo regional dia 27 sep",0.328,0.6719,0.0001
+197,"		centro cultural menonita museo",0.9802,0.018,0.0018
+216,"		museo de historia natural",0.5462,0.4535,0.0003
+222,"		cuento infantil el regreso de sam",0.0118,0.4005,0.5876
+228,"		angeles monasterio nuestra señora",0.014,0.2335,0.7525
+229,"		inventos de monte alban",0.1251,0.0023,0.8726
+232,"		control de gestión",0.9436,0.0564,0
+248,casa de la asegurada,0.0024,0.181,0.8167
+250,"		patrimonio cultural nuevo león",0.0012,0.2537,0.745
+252,"		centro cultural universitario",0.0006,0.9994,0
+257,"		historia museos natural paleontologia",0.9414,0.0147,0.0438
+274,"		coahuila ferrocarril museo torreón",0.9998,0.0002,0
+280,"		artística representación",0.0316,0.9333,0.0351
+294,"	casas culturales del municipio de san luis potosí",0.4324,0.521,0.0467
+295,"		arte moderno museo",0.8306,0.0128,0.1566
+303,"		carta del mas alla",0.2171,0.7406,0.0423
+327,"		museo de arte popular",0.9999,0,0.0001
+328,"		premio de literatura infantil el barco de vapor",0,0.0196,0.9804
+346,"		aerea ejercito fuerza museo",0.3044,0.4965,0.1991
+347,"		casa cultural impi picos",0.5941,0.0633,0.3426
+362,"		aire libre netzahualcóyotl teatro",0.0002,0,0.9998
+377,"		ixtlán río",0.9909,0.0065,0.0026
+397,"		jalisco tequila",0.9788,0.0181,0.0031
+396,"		mexicana revolución",0.3739,0.4184,0.2077
