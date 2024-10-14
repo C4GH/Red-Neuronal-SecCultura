@@ -3,17 +3,15 @@ import requests
 from urllib.parse import quote
 from torch.nn import functional as F
 import os
-
-# Assuming these are your model and tokenizer from your project
 from modelo.ModeloC import Modelo
 from embedding import Tokenizador
 
-# Paths to necessary files
-VOCOMPLETETEXT_PATH = r"C:\Users\Carlos Hurtado\PycharmProjects\Red SIC\Vocabulario\vocab_npa.npy"
-MODELO_ARCH = r"C:\Users\Carlos Hurtado\PycharmProjects\Red SIC\modelo\Modelos entrenados\best_model_10Epochs.pth"
+# Camino al vocabulario y modelo, necesario ajustar si se desea ejecutar
+VOCOMPLETETEXT_PATH = r"Path_to_vocab/vocab_npa.npy"
+MODELO_ARCH = r"Path_to_model/best_model_10Epochs.pth"
 URL_BASE = 'https://sic.cultura.gob.mx/utiles/cosic/xcon.php?busquedaavanzada={cad}&p=1'
 
-# Model parameters
+# Parámetros del modelo
 vocab_size = 1866360
 embedding_dim = 300
 d_model = embedding_dim
@@ -23,7 +21,7 @@ num_tokens = 300
 num_classes = 3
 dropout = 0.05
 
-# Initialize tokenizer and model
+# Inicialización
 print("Loading Vocabulary")
 tokenizer = Tokenizador.Tokenizador(VOCOMPLETETEXT_PATH)
 print("Loading Model")
